@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Volumkalkulator</h1>
+    <div class="input-rad">
+        <div class="input-felt">
+            <label for="gjennomsnitt-pr-bilde">Gjennomsnittsstørrelse pr. bilde (MB)</label>
+            <input type="number" id="gjennomsnitt-pr-bilde" value="0" min="0">
+        </div>
+        <div class="input-felt">
+            <label for="antall-bilde">Antall bilder pr år</label>
+            <input type="number" id="antall-bilde" value="0" min="0">
+        </div>
+    </div>
+    <div class="input-rad">
+        <div class="input-felt">
+            <label for="gjennomsnitt-pr-video">Gjennomsnittsstørrelse pr. video (GB)</label>
+            <input type="number" id="gjennomsnitt-pr-video" value="0" min="0">
+        </div>
+        <div class="input-felt">
+            <label for="antall-video">Antall videoer pr år</label>
+            <input type="number" id="antall-video" value="0" min="0">
+        </div>
+        <button id="regn-ut-total">Regn ut total</button>
+    </div>
+    <div class="input-rad">
+        <div class="input-felt">
+            <label for="total-pr-år">Total pr år (GB)</label>
+            <input type="number" id="total-pr-år" value="0" min="0">
+        </div>
+        <div class="input-felt">
+            <label for="år-frem">År frem i tid</label>
+            <input type="number" id="år-frem" value="5" min="0">
+        </div>
+        <div class="input-felt">
+            <label for="vekst-faktor">Vekstfaktor</label>
+            <input type="number" id="vekst-faktor" value="1.0" step="0.1" min="0">
+        </div>
+        <button id="regn-ut-vekst">Regn ut vekst</button>
+    </div>
+    <table id="tabell"></table>
+</body>
+</html>

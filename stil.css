@@ -1,0 +1,28 @@
+.input-felt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+    height: 100%;
+    width: 12rem;
+    white-space: nowrap;
+}
+
+.input-rad {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+
+button {
+    margin-left: -5rem
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+    border: 1px solid black;
+}
+
